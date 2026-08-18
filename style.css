@@ -237,18 +237,18 @@ footer a:hover {
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #e67e22, #d35400); /* Snygg varm färgövergång */
+  background: linear-gradient(135deg, #e67e22, #d35400); 
   color: #ffffff;
   font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   padding: 14px 28px;
   border: none;
-  border-radius: 30px; /* Helt rundade hörn för en modern look */
+  border-radius: 30px; 
   cursor: pointer;
   width: 100%;
-  box-shadow: 0 4px 15px rgba(211, 84, 0, 0.3); /* Mjuk färgskugga */
-  transition: all 0.3s ease; /* Gör alla animationer mjukare */
+  box-shadow: 0 4px 15px rgba(211, 84, 0, 0.3); 
+  transition: all 0.3s ease; 
   display: flex;
   align-items: center;
   justify-content: center;
