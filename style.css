@@ -24,6 +24,17 @@ h4,
   margin-bottom: 20px;
 }
 
+.site-logo {
+  display: inline-block;
+  line-height: 0;
+}
+
+.site-logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
 .sticky {
   position: sticky;
   top: 0;
