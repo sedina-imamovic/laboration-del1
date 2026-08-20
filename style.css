@@ -20,6 +20,23 @@ h4,
   margin-bottom: 20px;
 }
 
+.sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 20;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #a04000;
+  color: #ffffff;
+  padding: 6px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
 header {
   display: flex;
   flex-wrap: wrap;
@@ -185,12 +202,21 @@ footer a:focus {
   color: #222222;
 }
 
+.bakery-info {
+  text-align: center;
+  font-style: italic;
+  color: #555555;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
 .product-container {
   max-width: min(1000px, 100% - 30px);
   margin: 20px auto;
 }
 
 .product-item {
+  position: relative;
   background: white;
   margin-bottom: 25px;
   border-radius: 14px;
@@ -342,4 +368,79 @@ footer a:focus {
   background-color: #fdf2e9;
   outline: 3px solid #a04000;
   outline-offset: 2px;
+}
+
+.featured-section {
+  max-width: min(1000px, 100% - 30px);
+  margin: 50px auto;
+  text-align: center;
+}
+
+.featured-section h2 {
+  font-size: clamp(1.3rem, 3vw, 1.6rem);
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.featured-section > p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #222222;
+}
+
+.featured-products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.featured-product {
+  position: relative;
+  width: 33.333%;
+  box-sizing: border-box;
+  padding: 15px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.featured-product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.featured-product h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: #1a1a1a;
+}
+
+.featured-product p {
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+  color: #222222;
+}
+
+.featured-product .price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #a04000;
+}
+
+@media (max-width: 900px) {
+  .featured-product {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-product {
+    width: 100%;
+  }
 }
